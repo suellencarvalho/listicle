@@ -1,0 +1,142 @@
+body {
+   text-align: center;
+}
+
+#header {
+    height: 500px;
+    /*background-image (define uma imagem de fundo);*/
+    background-image: url("../images/header.jpg");
+    /*background-repeat (define a maneira como a imagem de fundo é posicionada);*/
+    background-repeat: no-repeat;
+    /*background-position (define como e onde a imagem de fundo é posicionada);*/
+    background-position: center;
+    /*background-size (define as dimensões da imagem no box);
+    a imagem terá as dimensões de modo a que sua menor dimensão ocupe toda a 
+    extensão do box e a maior dimensão seja tal que o aspect ratio (relação entre largura e altura) seja preservado: cover*/
+    background-size: cover;
+}
+
+.headerTitle {
+    
+    font-family: 'Roboto Slab' serif;
+    font-size: 36px;
+    /*A font-weightpropriedade define como caracteres grossos ou finos no texto devem ser exibidos*/
+    font-weight: normal;
+    color:white;
+    margin: 0;
+    max-width: 780px;
+    position: relative;
+    left: 50px;
+    top: 180px;    
+}
+
+#profileImage img {
+   background-repeat: no-repeat;
+    width: 100px;
+    /*para deixar a imagem redonda*/
+    border-radius: 100%;
+    border: 1px solid white;
+    margin-top:-50px;
+}
+
+#profileText {
+    /*Fonte,  o 'nome'  e o nome genérico*/
+    font-family: 'Source Sans Pro' sans-serif;
+    margin-left: auto;
+    margin-right: auto;
+    /*A propriedade line-height especifica a altura de uma linha.*/
+    line-height: 24px;
+}
+.profileName {
+    font-size: 18px;
+    font-weight: bold;
+    
+}
+
+.lastUpadate {
+    font-style: italic;
+    color:rgb(51, 51, 51);
+    /*A propriedade padding-bottom define o preenchimento inferior (espaço) de um elemento.*/
+    padding-bottom: 10px;
+    border-bottom: 2px solid #e6e6e6;
+    
+}
+
+#bebidas div {
+    margin-left: auto;
+    margin-right: auto;
+    width: 66.67%;
+    text-align: left;
+    overflow-x: hidden;
+    /*overflow-y: scroll;*/
+    perspective: 1px;
+    perspective-origin: 0 0;
+}
+
+#bebida {
+    margin-top: 60px;
+    margin-left: 40px;
+    /*A propriedade transform-origin permite alterar a posição dos elementos transformados.*/
+    transform-origin: 0 0;
+   /* transform: A propriedade transform aplica uma transformação 2D ou 3D a um elemento. 
+    Essa propriedade permite girar, dimensionar, mover, inclinar etc., elementos.
+    translateZ:; Define uma tradução 3D, usando apenas o valor para o eixo Z
+    scale: Define uma transformação de escala 2D*/
+    transform: translateZ(-2px) scale(3);
+}
+
+.bebidaTitulo {
+    font-family: 'Roboto Slab' serif;
+    font-style: normal;
+    font-size: 36px;
+    /*A propriedade de espessura da fonte define como caracteres grossos ou finos no texto devem ser exibidos.*/
+    font-weight: bold;
+    color:rgb(51, 51, 51);
+    /*A propriedade text-align especifica o alinhamento horizontal do texto em um elemento.*/
+    text-align: inherit;
+}
+
+em {
+    color: rgba(0, 0, 0, 0.25);
+    font-style: normal;  
+}
+
+.link {
+    color:#42b4d6;
+    text-decoration: none;
+/* A propriedade margin-bottom define a margem inferior de um elemento.*/
+    margin-bottom: 20px;
+}
+
+.link:hover {
+   /* A propriedade text-decoration especifica a decoração adicionada ao texto e é uma propriedade abreviada para:
+    text-decoration-line (obrigatório)
+    text-decoration-color
+    text-decoration-style
+    */
+    text-decoration: underline
+}
+
+.bebidaTexto {
+    font-family: 'Source Sans Pro' sans-serif;
+    font-size: 18px;
+    /*A propriedade line-height especifica a altura de uma linha.*/
+    line-height: 32px;
+    color: rgb(51, 51, 51);
+}
+
+.rec {
+    /*A propriedade margin-top define a margem superior de um elemento.*/
+    margin-top: 20px;
+    /* A propriedade margin-bottom define a margem inferior de um elemento.*/
+    margin-bottom: 20px;
+}
+
+.bebidaImagem {
+    /*A propriedade width define a largura de um elemento.
+      A largura de um elemento não inclui preenchimento, bordas ou margens*/
+    width: 100%;
+    /* A propriedade margin-bottom define a margem inferior de um elemento.*/
+    margin-bottom: 120px;
+
+}
